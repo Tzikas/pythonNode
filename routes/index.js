@@ -39,7 +39,7 @@ router.get('/shell', (req,res,next) =>{
 
   const options = {
       mode: 'text',
-      pythonPath: 'python',
+      pythonPath: 'python2.7',
       pythonOptions: ['-u'],
       scriptPath: '',
     };
