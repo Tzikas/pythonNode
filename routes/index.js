@@ -43,7 +43,6 @@ router.get('/shell', (req,res,next) =>{
       pythonOptions: ['-u'],
       scriptPath: '',
     };
-  
 
     PythonShell.run('hello.py', options, function (err,r) {
     //PythonShell.runString('x=1+1;print(x)', options, function (err, r) {
