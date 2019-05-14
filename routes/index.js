@@ -36,7 +36,7 @@ router.get('/', (req, res) => {
 
 
 router.get('/shell', (req,res,next) =>{
-
+  console.log('hi')
   const options = {
       mode: 'text',
       pythonPath: 'python2.7',
@@ -44,11 +44,12 @@ router.get('/shell', (req,res,next) =>{
       scriptPath: '',
     };
     
+
     PythonShell.run('hello.py', options, function (err,r) {
     //PythonShell.runString('x=1+1;print(x)', options, function (err, r) {
 
           if (err) throw err;
-          console.log('finished', r);
+          console.log('finished???', r);
           res.send(r)
   });
 
