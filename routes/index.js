@@ -47,7 +47,7 @@ router.get('/shell', (req,res,next) =>{
 
     PythonShell.run('hello.py', options, function (err,r) {
     //PythonShell.runString('x=1+1;print(x)', options, function (err, r) {
-
+        
           if (err) throw err;
           console.log('finished???', r);
           res.send(r)

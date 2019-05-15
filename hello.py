@@ -13,5 +13,7 @@ print( numpy.random.normal() )
 #print("Last name: " + sys.argv[2])
 
 print('hi')
-#for num in range(1, 21):
- #   print(num)
+for num in range(1, 21):
+    print(num)
+
+
