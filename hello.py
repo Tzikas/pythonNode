@@ -1,6 +1,6 @@
 import math #from '/usr/local/bin/python'
 #import pandas
-import numpy
+#import numpy
 # Takes first name and last name via command
 # line arguments and then display them
 print("Output from Python outer scope")
@@ -8,7 +8,7 @@ print(math)
 
 print( math.sqrt(64) )
 
-print( numpy.random.normal() )
+#print( numpy.random.normal() )
 
 #print("Last name: " + sys.argv[2])
 
