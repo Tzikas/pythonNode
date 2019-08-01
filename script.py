@@ -3,6 +3,7 @@ import sys, json
 #Read data from stdin
 def read_in():
     lines = sys.stdin.readlines()
+    #print(lines)
     # Since our input would only be having one line, parse our JSON data from that
     return json.loads(lines[0])
 
@@ -13,11 +14,11 @@ def main():
     # Sum  of all the items in the providen array
     total_sum_inArray = 0
     for item in lines:
-        print('python',item)
-        total_sum_inArray += item
+        print('python',item['name'])
+        #total_sum_inArray += item
 
     #return the sum to the output stream
-    print ( total_sum_inArray )
+    #print ( total_sum_inArray )
 
 # Start process
 if __name__ == '__main__':

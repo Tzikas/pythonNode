@@ -1,5 +1,40 @@
-game page 
+<h2></h2>
+
+  
 
 {{#each data}}
-    <div class="row">{{this.name}} {{name}} {{data.name}}</div>
+<div class="card">
+    <h5 class="title">{{memory}}</h5>
+</div>
+<form class="answer" method="POST" action="/answer">
+    <input type="text" name="answer"/>
+    <button>Submit</button>
+</form>
 {{/each}}
+
+
+<div id="myDiv">
+    <!-- Plotly chart will be drawn inside this DIV -->
+</div>
+
+
+<style>
+    form {
+        margin-top: 50px;
+        /*animation: fade 7s reverse;*/
+    }
+    .card {
+        font-size:24px;
+        text-align:center;
+        /*animation: fade 7s forwards;*/
+    }
+
+    @keyframes fade {
+        0% {
+            opacity:1;
+        }
+        100% {
+            opacity: 0
+        }
+    }
+</style>

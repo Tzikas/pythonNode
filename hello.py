@@ -3,7 +3,7 @@ import math #from '/usr/local/bin/python'
 #import numpy
 # Takes first name and last name via command
 # line arguments and then display them
-print("Output from Python outer scope")
+print("Output from Python outer scope787878")
 print(math)
 
 print( math.sqrt(64) )

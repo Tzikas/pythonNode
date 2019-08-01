@@ -1,13 +1,38 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{data}} </p>
-    sfdggdfs
 
+<br>
 
-<form method="POST" action="/new-game">
-    <button>NEW GAME</button>
-</form>
+<div id="counter">0</div>
+<button id="gallery_btn-prev"><img class="gallery_arrow" />prev</button>
+<span id="middleSpan"></span>
+<button id="gallery_btn-next"><img class="gallery_arrow" />next</button>
 
-<form method="POST" action="">
+<div id="one" class="sly">
+    <ul>
+
+    </ul>
+</div>
+
+<ul id="score">
+
+</ul>
+
+<form class="answer" method="POST" action="">
     <input type="text" name="answer" />
     <button>POST</button>
+</form>
+
+
+<form class="new_game" method="POST" action="">
+    <label>Letters in Word</label>
+    <input name="letters" type="range" min="3" max="10" value="5">
+    <br>
+    <label>Words in Round</label>
+    <input name="words" type="range" min="1" max="20" value="3">
+    <br>
+    <label>Rounds in Total</label>
+    <input name="lines" type="range" min="5" max="20" value="8">
+    <br>
+    <button>NEW GAME</button>
 </form>

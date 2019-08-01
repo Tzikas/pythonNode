@@ -2,7 +2,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const wordSchema = new Schema({
-  name:String
+    memory:String,
+    retentions:[],
+    retention: {type: Number ,default: 0 },
+    originalId: String
 }, {
     timestamps: {
       createdAt: 'created_at',
